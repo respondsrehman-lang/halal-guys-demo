@@ -21,3 +21,7 @@ then visit http://localhost:8000
 ## Deploy
 
 Served via GitHub Pages from the `main` branch (repo root).
+
+## Shipping changes
+
+Run `/ship` in opencode on a finished change to open a reviewed pull request.
