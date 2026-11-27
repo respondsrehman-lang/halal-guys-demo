@@ -1,0 +1,10 @@
+version: 1
+mode: observe
+rules:
+  - purpose: "Documentation-only changes can be approved by Claude."
+    paths: ["**/*.md"]
+    verdict: { claude: approves, seats: 0 }
+    advisory: [claude/code_review]
+  - purpose: "Everything else needs one person; Claude comments only."
+    paths: ["**", "!**/*.md"]
+    verdict: { claude: comments, seats: 1 }
